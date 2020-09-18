@@ -1,0 +1,6 @@
+aiohttp
+gcloud-aio-storage
+jwt
+lxml
+prisma-helpers
+python-dateutil
