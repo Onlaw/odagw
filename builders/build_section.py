@@ -1,6 +1,6 @@
 from typing import List, Optional
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 import json
 import asyncio
 import lxml.html
@@ -111,8 +111,7 @@ def document2sentences(self, document: str) -> List[str]:
 
 
 def get_iso_formated_datetime_string_utc() -> str:
-    now = datetime.utcnow()
-    return now.isoformat()
+    return datetime.now(timezone.utc).isoformat()
 
 
 if __name__ == '__main__':
