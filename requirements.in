@@ -4,3 +4,4 @@ jwt
 lxml
 prisma-helpers
 python-dateutil
+scrapy
