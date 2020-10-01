@@ -18,10 +18,10 @@ class SkatDocSpider(scrapy.Spider):
         self.collected_tokens: int = 0
         self.data_folder: str = os.path.abspath(os.path.join(this_file_path, '../../data'))
         self.url_file_path: str = os.path.join(self.data_folder, 'urls.json')
-        self.urls_already_scraped_file_path: str = os.path.join(self.data_folder, 'data.jsonl')
+        self.urls_already_scraped_file_path: str = os.path.join(self.data_folder, 'skat.jsonl')
         self.urls_to_scrape: Set[str]
         self.urls_already_scraped: Set[str]
-        breakpoint()
+
         if os.path.exists(self.urls_already_scraped_file_path):
             with open(self.urls_already_scraped_file_path, 'r') as fp:
                 urls_already_scraped_info = fp.read()

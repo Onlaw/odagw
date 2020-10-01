@@ -1,4 +1,5 @@
-from datetime import datetime, timezone
+# from datetime import datetime, timezone
+import arrow
 import json
 import lxml.html
 import lxml.etree
@@ -12,10 +13,13 @@ class SkatPipeline:
         with open(f'{spider.data_folder}/{filename}', 'w') as fp:
             fp.write(content)
 
+        date_format = "%c %Z %z"
+
         metadata: dict = {
             'doc_id': item['SKM-nummer'],
             'uri': item['url'],
-            'date_built': datetime.now(timezone.utc).isoformat()
+            'date_built': arrow.now().replace(tzinfo="Europe/Copenhagen").strftime(date_format)
+            # 'date_built': datetime.now(timezone.utc).isoformat()
         }
 
         with open(spider.urls_already_scraped_file_path, 'a') as fp:
