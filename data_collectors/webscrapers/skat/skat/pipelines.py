@@ -9,7 +9,7 @@ class SkatPipeline:
     def process_item(self, item, spider):
         content: str = self.strip_html(item['body'])
 
-        filename: str = f'skat_{item["SKM-nummer"]}'
+        filename: str = f'skat_{item["SKM-nummer"]}'.replace('.', '_')
         with open(f'{spider.data_folder}/{filename}', 'w') as fp:
             fp.write(content)
 
