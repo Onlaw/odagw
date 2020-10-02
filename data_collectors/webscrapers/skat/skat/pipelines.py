@@ -16,7 +16,7 @@ class SkatPipeline:
         date_format = "%c %Z %z"
 
         metadata: dict = {
-            'doc_id': item['SKM-nummer'],
+            'doc_id': filename,
             'uri': item['url'],
             'date_built': arrow.now().replace(tzinfo="Europe/Copenhagen").strftime(date_format)
             # 'date_built': datetime.now(timezone.utc).isoformat()
