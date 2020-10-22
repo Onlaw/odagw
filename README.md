@@ -1,5 +1,5 @@
-# onlaw-dagw
-Onlaw contribution to the Danish Giga Word (DAGW) Project
+# odagw
+Onlaw contribution to the Danish Giga Word (DAGW) Project - or Open DAGW
 
 # Install
 
