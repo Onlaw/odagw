@@ -35,7 +35,7 @@ itemadapter==0.1.1        # via itemloaders, scrapy
 itemloaders==1.0.3        # via scrapy
 jmespath==0.10.0          # via itemloaders
 jwt==1.0.0                # via -r requirements.in
-lxml==4.5.2               # via -r requirements.in, parsel, scrapy
+lxml==4.6.2               # via -r requirements.in, parsel, scrapy
 mccabe==0.6.1             # via flake8
 multidict==4.7.6          # via aiohttp, prisma-helpers, yarl
 mypy-extensions==0.4.3    # via mypy
