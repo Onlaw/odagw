@@ -4,48 +4,139 @@
 #
 #    pip-compile requirements.in
 #
-aiohttp==3.6.2            # via -r requirements.in, gcloud-aio-auth, prisma-helpers
-async-timeout==3.0.1      # via aiohttp, prisma-helpers
-asyncio==3.4.3            # via prisma-helpers
-attrs==20.2.0             # via aiohttp, automat, prisma-helpers, service-identity, twisted
-automat==20.2.0           # via twisted
-backoff==1.10.0           # via gcloud-aio-auth
-cffi==1.14.3              # via cryptography
-chardet==3.0.4            # via aiohttp, prisma-helpers
-constantly==15.1.0        # via twisted
-cryptography==2.9.2       # via gcloud-aio-auth, jwt, pyopenssl, scrapy, service-identity
-cssselect==1.1.0          # via parsel, scrapy
-future==0.18.2            # via gcloud-aio-auth
-gcloud-aio-auth==3.4.3    # via gcloud-aio-storage
-gcloud-aio-storage==5.6.0  # via -r requirements.in
-hyperlink==20.0.1         # via twisted
-idna==2.10                # via hyperlink, prisma-helpers, yarl
-incremental==17.5.0       # via twisted
-itemadapter==0.1.1        # via itemloaders, scrapy
-itemloaders==1.0.3        # via scrapy
-jmespath==0.10.0          # via itemloaders
-jwt==1.0.0                # via -r requirements.in
-lxml==4.5.2               # via -r requirements.in, parsel, scrapy
-multidict==4.7.6          # via aiohttp, prisma-helpers, yarl
-parsel==1.6.0             # via itemloaders, scrapy
-prisma-helpers==0.1.3     # via -r requirements.in
-protego==0.1.16           # via scrapy
-pyasn1-modules==0.2.8     # via service-identity
-pyasn1==0.4.8             # via pyasn1-modules, service-identity
-pycparser==2.20           # via cffi
-pydispatcher==2.0.5       # via scrapy
-pyhamcrest==2.0.2         # via twisted
-pyjwt==1.7.1              # via gcloud-aio-auth
-pyopenssl==19.1.0         # via scrapy
-python-dateutil==2.8.1    # via -r requirements.in
-queuelib==1.5.0           # via scrapy
-scrapy==2.3.0             # via -r requirements.in
-service-identity==18.1.0  # via scrapy
-six==1.15.0               # via automat, cryptography, gcloud-aio-auth, parsel, protego, pyopenssl, python-dateutil, w3lib
-twisted==20.3.0           # via scrapy
-w3lib==1.22.0             # via itemloaders, parsel, scrapy
-yarl==1.5.1               # via aiohttp, prisma-helpers
-zope.interface==5.1.1     # via scrapy, twisted
+aiohttp==3.6.2
+    # via
+    #   -r requirements.in
+    #   gcloud-aio-auth
+    #   prisma-helpers
+async-timeout==3.0.1
+    # via
+    #   aiohttp
+    #   prisma-helpers
+asyncio==3.4.3
+    # via prisma-helpers
+attrs==20.2.0
+    # via
+    #   aiohttp
+    #   automat
+    #   prisma-helpers
+    #   service-identity
+    #   twisted
+automat==20.2.0
+    # via twisted
+backoff==1.10.0
+    # via gcloud-aio-auth
+cffi==1.14.3
+    # via cryptography
+chardet==3.0.4
+    # via
+    #   aiohttp
+    #   prisma-helpers
+constantly==15.1.0
+    # via twisted
+cryptography==2.9.2
+    # via
+    #   gcloud-aio-auth
+    #   jwt
+    #   pyopenssl
+    #   scrapy
+    #   service-identity
+cssselect==1.1.0
+    # via
+    #   parsel
+    #   scrapy
+future==0.18.2
+    # via gcloud-aio-auth
+gcloud-aio-auth==3.4.3
+    # via gcloud-aio-storage
+gcloud-aio-storage==5.6.0
+    # via -r requirements.in
+hyperlink==20.0.1
+    # via twisted
+idna==2.10
+    # via
+    #   hyperlink
+    #   prisma-helpers
+    #   yarl
+incremental==17.5.0
+    # via twisted
+itemadapter==0.1.1
+    # via
+    #   itemloaders
+    #   scrapy
+itemloaders==1.0.3
+    # via scrapy
+jmespath==0.10.0
+    # via itemloaders
+jwt==1.0.0
+    # via -r requirements.in
+lxml==4.6.3
+    # via
+    #   -r requirements.in
+    #   parsel
+    #   scrapy
+multidict==4.7.6
+    # via
+    #   aiohttp
+    #   prisma-helpers
+    #   yarl
+parsel==1.6.0
+    # via
+    #   itemloaders
+    #   scrapy
+prisma-helpers==0.1.3
+    # via -r requirements.in
+protego==0.1.16
+    # via scrapy
+pyasn1-modules==0.2.8
+    # via service-identity
+pyasn1==0.4.8
+    # via
+    #   pyasn1-modules
+    #   service-identity
+pycparser==2.20
+    # via cffi
+pydispatcher==2.0.5
+    # via scrapy
+pyhamcrest==2.0.2
+    # via twisted
+pyjwt==1.7.1
+    # via gcloud-aio-auth
+pyopenssl==19.1.0
+    # via scrapy
+python-dateutil==2.8.1
+    # via -r requirements.in
+queuelib==1.5.0
+    # via scrapy
+scrapy==2.3.0
+    # via -r requirements.in
+service-identity==18.1.0
+    # via scrapy
+six==1.15.0
+    # via
+    #   automat
+    #   cryptography
+    #   gcloud-aio-auth
+    #   parsel
+    #   protego
+    #   pyopenssl
+    #   python-dateutil
+    #   w3lib
+twisted==20.3.0
+    # via scrapy
+w3lib==1.22.0
+    # via
+    #   itemloaders
+    #   parsel
+    #   scrapy
+yarl==1.5.1
+    # via
+    #   aiohttp
+    #   prisma-helpers
+zope.interface==5.1.1
+    # via
+    #   scrapy
+    #   twisted
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
